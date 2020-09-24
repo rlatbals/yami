@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,63 +12,98 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>스마일 푸드야미</title>
 </head>
+
 <body>
     <h1 class="notext">스마일푸드 야미</h1>
     <div id="header">
-    	<div class="header_top">
-             <div class="logo">
-                 <a href="#">
-                     <img src="images/logo.gif" alt="스마일푸드 야미">
-                 </a>
-                 </div>
-            	<div class="user">
-                        <ul id="tnb">
-                            <li><a href="#">로그인</a></li>
-                            <li><a href="#">회원가입</a></li>
-                            <li><a href="#">장바구니</a></li>
-                            <li><a href="#">마이페이지</a></li>
-                        </ul>
-             </div>
-        </div>
-            <hr class="gubun">
-            <div class="nav">
-            	   <ul id="gnb">
-                       <li><a href="#">야미소개</a></li>
-                       <li><a href="#">생산공정</a></li>
-                       <li><a href="#">제품소개</a></li>
-                       <li><a href="#">고객센터</a></li>
-                   </ul>
+        <div class="header_top">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.gif" alt="스마일푸드 야미">
+                </a>
+            </div>
+            <div class="user">
+                <ul id="tnb">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#" onclick="alert('로그인을 먼저하세요');">장바구니</a></li>
+                    <li><a href="#" onclick="alert('로그인을 먼저하세요'); ">마이페이지</a></li>
+                </ul>
             </div>
         </div>
+        <hr class="gubun">
+        <div class="nav">
+            <ul id="gnb">
+                <li><a href="#">야미소개</a>
+                    <ul class="lnb">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">사업분야</a></li>
+                        <li><a href="#">파트너사</a></li>
+                        <li><a href="#">특허현황</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">생산공정</a>
+                    <ul class="lnb">
+                        <li><a href="#">냉동식품</a></li>
+                        <li><a href="#">신선식품</a></li>
+                        <li><a href="#">농장식품</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제품소개</a>
+                    <ul class="lnb">
+                        <li><a href="#">곱창</a></li>
+                        <li><a href="#">찹 스테이크</a></li>
+                        <li><a href="#">양고기</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">고객센터</a>
+                    <ul class="lnb">
+                        <li><a href="#">F&Q</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">질문답변</a></li>
+                    </ul></li>
+
+        </div>
     </div>
-        <!-- /.header -->
+    </div>
+    <!-- /.header -->
     <div id="slide">
-        <img src="images/visual.jpg" alt="스마일푸드 야미">
+        <h2 class="cotext"></h2>
+        <div class="slogan">
+            <h3>함께하면 행복해지는</h3>
+            <h4>스마일 푸드 야미</h4>
+        </div>
+        <div class="slider">
+            <div><img src="images/slide1.jpg" alt="1"></div>
+            <div><img src="images/slide2.jpg" alt="2"></div>
+            <div><img src="images/slide3.jpg" alt="3"></div>
+          </div>
     </div>
-    <div id="icons"
-    ul>li*4>a>[href=#]>img[src=visual_icon$ alt]
-    <ul class="imgitem">
-        <li><a href="#"><img src="images/visual_icon1.jpg" alt="기업소개"></a></li>
-        <li><a href="#"><img src="images/visual_icon2.jpg" alt="사업안내"></a></li>
-        <li><a href="#"><img src="images/visual_icon3.jpg" alt="제품정보"></a></li>
-        <li><a href="#"><img src="images/visual_icon4.jpg" alt="커뮤니티"></a></li>
-    </ul>
-    <div id="main">
-        <h2>product</h2>
-        <ul>
-            <li><a href="#"><img src="images/prd_img1.jpg" alt="양념치킨"></a></li>
-            <li><a href="#"><img src="images/prd_img2.jpg" alt="스테이크"></a></li>
-            <li><a href="#"><img src="images/prd_img3.jpg" alt="만두"></a></li>
+    <div id="icons">
+        <ul class="img_item">
+            <li><a href="#"><img src="images/visual_icon1.jpg" alt="기업소개"></a></li>
+            <li><a href="#"><img src="images/visual_icon2.jpg" alt="사업안내"></a></li>
+            <li><a href="#"><img src="images/visual_icon3.jpg" alt="제품정보"></a></li>
+            <li><a href="#"><img src="images/visual_icon4.jpg" alt="커뮤니티"></a></li>
         </ul>
+        <div id="main">
+            <h2>PRODUCT</h2>
+            <ul>
+                <li><a href="#"><img src="images/prd_img1.jpg" alt="양념치킨"></a></li>
+                <li><a href="#"><img src="images/prd_img2.jpg" alt="스테이크"></a></li>
+                <li><a href="#"><img src="images/prd_img3.jpg" alt="만두"></a></li>
+            </ul>
+        </div>
     </div>
-    </div>
-    <div>
-        <h2>product</h2>
-        3개의 음식사진
-    </div>
+   
     <hr class="gubun">
     <div id="aside">
         <ul class="bnb">
@@ -81,7 +117,16 @@
     <div id="footer">
         <div class="footer_logo">
             <a href="#">
-    </div>
-
+        </div>
+        <script>
+            $(document).ready(function(){
+              $('.slider').bxSlider({
+                  auto:true,
+                  pause:3000,
+                  pager:false
+              });
+            });
+          </script>
 </body>
+
 </html>
